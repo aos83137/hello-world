@@ -1,5 +1,5 @@
 # hello-world
-Just another rpository 
+Just another repository !
 
 
-집에 가고싶군요
+Hello Github!!
