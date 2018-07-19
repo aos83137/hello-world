@@ -3,13 +3,13 @@ class Q8 {
     public static void main(String[] args){
         Scanner scan = new Scanner(System.in);
         int sum=0;  
-        System.out.print("Á¤¼ö ÀÔ·Â");
+        System.out.print("ì •ìˆ˜ ì…ë ¥");
         int n;
         n = scan.nextInt();
 
-        sum = n*(n+1)/2;  // °¡¿ì½º µ¡¼À ÀÌ¿ë
+        sum = n*(n+1)/2;  // ê°€ìš°ìŠ¤ ë§ì…ˆ ì´ìš©
 
-        System.out.printf("1~%d ÀÇ ÇÕÀº : %d", n, sum);
+        System.out.printf("1~%d ì˜ í•©ì€ : %d", n, sum);
 
     }
-}
+} 
