@@ -1,5 +1,5 @@
 import java.util.*;
-class Q16{
+class J40P_Q16{
     static void spira(int n)
     {
         int i;
