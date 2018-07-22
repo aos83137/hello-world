@@ -1,4 +1,4 @@
-class Max4m {
+class J19P_Q1 {
     static int max4(int a, int b, int c, int d){
         int max = a;
         if(b>max) max = b;
