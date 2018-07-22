@@ -1,5 +1,5 @@
 import java.util.*;
-class Q8 {
+class J30P_Q8 {
     public static void main(String[] args){
         Scanner scan = new Scanner(System.in);
         int sum=0;  
