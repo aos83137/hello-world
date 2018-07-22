@@ -1,4 +1,4 @@
-class Min3m {
+class J19P_Q2 {
     static int min3(int a, int b, int c){
         int min = a;
         if(b<min) min = b;
