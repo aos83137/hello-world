@@ -1,7 +1,7 @@
-class Q2{
+class J61P_Q2{
     static void swap(int a[], int idx1, int idx2){
         int t = a[idx1]; a[idx1] = a[idx2]; a[idx2] = t;
-        System.out.printf("%na[%d]°ú a[%d]¸¦ ±³È¯ÇÕ´Ï´Ù.%n", idx1, idx2);
+        System.out.printf("%na[%d]ê³¼ a[%d]ë¥¼ êµí™˜í•©ë‹ˆë‹¤.%n", idx1, idx2);
     }
     static void putArr(int[] a){
         for(int i=0;i<a.length;i++)
@@ -10,13 +10,13 @@ class Q2{
     public static void main(String[] args){
         int[] arr = new int[] {5,10,73,2,-5,42};
 
-        for(int i=0;i<arr.length/2;i++){ // ¿ª¼ø Á¤·Ä ½Ã ½ÇÇàÈ½¼ö´Â ±æÀÌ/2
+        for(int i=0;i<arr.length/2;i++){ // ì—­ìˆœ ì •ë ¬ ì‹œ ì‹¤í–‰íšŸìˆ˜ëŠ” ê¸¸ì´/2
             putArr(arr);
             swap(arr,i,arr.length-1-i);
         }
         System.out.println();
         putArr(arr);
-        System.out.print("¿ª¼ø Á¤·ÄÀ» ¸¶ÃÆ½À´Ï´Ù.");
+        System.out.print("ì—­ìˆœ ì •ë ¬ì„ ë§ˆì³¤ìŠµë‹ˆë‹¤.");
         
     }
 }
