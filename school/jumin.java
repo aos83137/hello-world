@@ -1,22 +1,22 @@
 import java.util.*;
 class jumin{
     static boolean ju(String b){
-        char a = b.charAt(7); // char a´Â b¹è¿­ÀÇ 8¹øÂ° ¿ä¼Ò¸¦ ÀúÀå
-        if(a == '1' || a =='3') return true; // ¹®ÀÚ´Ï±î ''¸¦ »ç¿ëÇØ¾ßµÊ
+        char a = b.charAt(7); // char aëŠ” bë°°ì—´ì˜ 8ë²ˆì§¸ ìš”ì†Œë¥¼ ì €ì¥
+        if(a == '1' || a =='3') return true; // ë¬¸ìë‹ˆê¹Œ ''ë¥¼ ì‚¬ìš©í•´ì•¼ë¨
         else return false;
     }
 
     static String strInput(){
         Scanner scan = new Scanner(System.in);
-        System.out.print("ÀÔ ·Â : ");
+        System.out.print("ì… ë ¥ : ");
        
         return scan.nextLine();
     }
 
     public static void main(String[] args){
         
-         if(ju(strInput())==true) System.out.println("³²ÀÚ");
-        else System.out.println("¿©ÀÚ");
+         if(ju(strInput())) System.out.println("ë‚¨ì");
+        else System.out.println("ì—¬ì");
 
     }
 }
