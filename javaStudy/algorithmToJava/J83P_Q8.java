@@ -2,37 +2,36 @@ import java.util.*;
 
 class J83P_Q8{
     static int[][] mdays ={
-        {31,28,31,30,31,30,31,31,30,31,30,31}, //Æò³â
-        {31,29,31,30,31,30,31,31,30,31,30,31}  //À±³â
+        {31,28,31,30,31,30,31,31,30,31,30,31}, //í‰ë…„
+        {31,29,31,30,31,30,31,31,30,31,30,31}  //ìœ¤ë…„
     };
 
     static int isLeap(int year){
         return (year % 4==0 && year % 100 !=0 || year %400 ==0) ? 1:0;
-    }//À±³â 1 /Æò³â 0
+    }//ìœ¤ë…„ 1 /í‰ë…„ 0
 
     static int dayOfYear(int y, int m, int d){ 
-        while(m-1>0){
+        while(--m>0){                           //ì „êº¼ ë³´ë‹¤ ì´ê²Œ ë” 
             d+=mdays[isLeap(y)][m-2];
-            m--;
         }
         return d;
     }
 
     public static void main(String[] args){
         Scanner scan = new Scanner(System.in);
-        System.out.println("±× ÇØ °æ°ú ÀÏ¼ö¸¦ ±¸ÇÕ´Ï´Ù.");
+        System.out.println("ê·¸ í•´ ê²½ê³¼ ì¼ìˆ˜ë¥¼ êµ¬í•©ë‹ˆë‹¤.");
         int retry = 0;
         do{
-            System.out.print("³â");
+            System.out.print("ë…„");
             int year = scan.nextInt();
-            System.out.print("¿ù");
+            System.out.print("ì›”");
             int month = scan.nextInt();
-            System.out.print("ÀÏ");
+            System.out.print("ì¼");
             int day = scan.nextInt();
 
-            System.out.printf("±× ÇØ %dÀÏÂ°ÀÔ´Ï´Ù.%n",dayOfYear(year, month, day));
+            System.out.printf("ê·¸ í•´ %dì¼ì§¸ì…ë‹ˆë‹¤.%n",dayOfYear(year, month, day));
 
-            System.out.print("ÇÑ ¹ø ´õ ÇÒ±î¿ä? (1.¿¹/0.¾Æ´Ï¿À) : ");
+            System.out.print("í•œ ë²ˆ ë” í• ê¹Œìš”? (1.ì˜ˆ/0.ì•„ë‹ˆì˜¤) : ");
             retry = scan.nextInt();
         }while(retry == 1);
     }
