@@ -13,8 +13,8 @@ class Reverse{
     static String strInput(){
         Scanner scan = new Scanner(System.in);
         System.out.print("입 력 : ");
-        String str = scan.nextLine();
-        return str;
+      
+        return  scan.nextLine();
     }
 
 
