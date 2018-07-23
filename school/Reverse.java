@@ -9,12 +9,18 @@ class Reverse{
 
             return s2;
     }
-
-    public static void main(String[] args){
+    
+    static String strInput(){
         Scanner scan = new Scanner(System.in);
-
         System.out.print("입 력 : ");
         String str = scan.nextLine();
+        return str;
+    }
+
+
+    public static void main(String[] args){
+
+        String str = strInput();
         System.out.println("거꾸로 : " + Rever(str));
     }
 }
