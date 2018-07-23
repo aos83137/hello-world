@@ -9,12 +9,25 @@ class Reverse{
 
             return s2;
     }
+    
+    static String strInput(){
+        Scanner scan = new Scanner(System.in);
+        System.out.print("입 력 : ");
+      
+        return  scan.nextLine();
+    }
+
 
     public static void main(String[] args){
-        Scanner scan = new Scanner(System.in);
 
-        System.out.print("입 력 : ");
-        String str = scan.nextLine();
+        String str = strInput();
         System.out.println("거꾸로 : " + Rever(str));
     }
 }
+
+
+// ex 입력 : abc
+// i: 2
+// s2 = "c"
+// i: 1
+// s2 = "c" + 'b' = "cb"
