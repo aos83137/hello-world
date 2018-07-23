@@ -1,5 +1,5 @@
 import java.util.*;
-class JP30_Q9{
+class J30P_Q9{
     static int sumof(int a, int b){
         if(a>b){
             int t = a; a = b; b = t;
