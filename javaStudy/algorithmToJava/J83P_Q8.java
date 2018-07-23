@@ -12,7 +12,7 @@ class J83P_Q8{
 
     static int dayOfYear(int y, int m, int d){ 
         while(--m>0){                           //전꺼 보다 이게 더 
-            d+=mdays[isLeap(y)][m-2];
+            d+=mdays[isLeap(y)][m-１];
         }
         return d;
     }
