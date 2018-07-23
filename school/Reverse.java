@@ -18,3 +18,10 @@ class Reverse{
         System.out.println("거꾸로 : " + Rever(str));
     }
 }
+
+
+// ex 입력 : abc
+// i: 2
+// s2 = "c"
+// i: 1
+// s2 = "c" + 'b' = "cb"
