@@ -1,5 +1,5 @@
 import java.util.*;
-class P30_Q9{
+class JP30_Q9{
     static int sumof(int a, int b){
         if(a>b){
             int t = a; a = b; b = t;
@@ -16,12 +16,12 @@ class P30_Q9{
     public static void main(String[] args){
         Scanner scan = new Scanner(System.in);
 
-        System.out.print("Á¤¼ö ÀÔ·Â1 :" );
+        System.out.print("ì •ìˆ˜ ì…ë ¥1 :" );
         int a = scan.nextInt();
-        System.out.print("Á¤¼ö ÀÔ·Â2 :" );
+        System.out.print("ì •ìˆ˜ ì…ë ¥2 :" );
         int b = scan.nextInt();
 
         int sum = sumof(a,b);
-        System.out.printf("%2d~%2d »çÀÌÀÇ Á¤¼öÇÕÀº %d",a,b,sum);
+        System.out.printf("%2d~%2d ì‚¬ì´ì˜ ì •ìˆ˜í•©ì€ %d",a,b,sum);
     }
 }
