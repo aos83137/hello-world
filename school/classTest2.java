@@ -8,7 +8,11 @@ class Person{  //변수 함수 두가지만 와야한다
     //초기화시 문자열은 null, boolean false, int 0
     
         static int s = 100;  //클래스변수,정적변수 ->인스턴스 생성을 하지 않아도 사용할수 있다. ex 49행
-
+                            //참고로 접근 제어자 사용가능 ex public,private etc..
+    
+    public static staticTest(){   // public static이니까 인스턴스 생성 안해도 staticTest함수 사용 가능
+        System.out.println("정적함수 테스트");
+    }
     Person(){}
     Person(String name, int age, String phone, boolean sei){
         this.name = name;
