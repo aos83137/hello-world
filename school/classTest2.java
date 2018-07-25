@@ -59,3 +59,8 @@ class classTest2{
         System.out.println("성:" + ((p.getSei() == true)? "남자": "여자" ));
     }
 }
+
+
+
+// nextLine();  buffer남아있는것도 다가져온다    - 한 줄 단위로 입력받기 때문에 개행문자도 한 줄로 인식합니다.
+// next(); buffer 초기화 하고 가져오는 것 같다?  - 개행문자, 공백은 무시하고 문자를 입력받습니다.
