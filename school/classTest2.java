@@ -6,6 +6,9 @@ class Person{  //변수 함수 두가지만 와야한다
     private String phone;  
     private boolean sei;
     //초기화시 문자열은 null, boolean false, int 0
+    
+        static int s = 100;  //클래스변수,정적변수 ->인스턴스 생성을 하지 않아도 사용할수 있다. ex 49행
+
     Person(){}
     Person(String name, int age, String phone, boolean sei){
         this.name = name;
@@ -43,7 +46,9 @@ class Person{  //변수 함수 두가지만 와야한다
 class classTest2{
     public static void main(String[] args){
         Scanner scan = new Scanner(System.in);
-
+     
+        System.out.println(Person.s);
+        
         Person p = new Person("홍길동","010-1234-5678");
         System.out.print("나이 : ");
         p.setAge(scan.nextInt());      // 입력하면 일단 버퍼에 저장되고 변수에 저장된다??????????????
