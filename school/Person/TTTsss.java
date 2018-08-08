@@ -4,18 +4,17 @@ import haksa.Teacher;
 
 class TTTsss{
     public static void main(String[] args){
-        Person p;
-        p = new Student("ÀÌ¼ø½Å", "010-1234-5678","1235", 1, 4.5);
+        Person p = new Student("ì´ìˆœì‹ ", "010-1234-5678","1235", 1, 4.5); // upcasting
 
-        System.out.println("ÀÌ¸§ : " + p.getName());
-        System.out.println("ÀÌ¸§ : " + p.getPhone() );
+        System.out.println("ì´ë¦„ : " + p.getName());
+        System.out.println("ì´ë¦„ : " + p.getPhone() );
 
 
-        // System.out.println("ÇĞ¹ø : " + p.hakbun);  »ç¿ëºÒ°¡ »ç¿ëÇÒ·Á¸é 
-        // Student s = (Student)p;  ÀÌ·¸°Ô ÇØ¾ßÁö Person ¿ÜÀÇ º¯¼öµµ »ç¿ë°¡´É / Çüº¯È¯ ¾ÈÇÏ¸é ¿À·ù³².
-        p.show(); // student¿¡ ÀÖ´Â show°¡ ½ÇÇàµÊ
+        // System.out.println("í•™ë²ˆ : " + p.hakbun);  ì‚¬ìš©ë¶ˆê°€ ì‚¬ìš©í• ë ¤ë©´ 
+        // Student s = (Student)p;  ì´ë ‡ê²Œ í•´ì•¼ì§€ Person ì™¸ì˜ ë³€ìˆ˜ë„ ì‚¬ìš©ê°€ëŠ¥ / í˜•ë³€í™˜ ì•ˆí•˜ë©´ ì˜¤ë¥˜ë‚¨.  //downcasting
+        p.show(); // studentì— ìˆëŠ” showê°€ ì‹¤í–‰ë¨
         System.out.println();
-        p = new Teacher("Àå±æ»ê", "010-7897-5412", "123456" ,"ÄÄÁ¤" , 1000);
+        p = new Teacher("ì¥ê¸¸ì‚°", "010-7897-5412", "123456" ,"ì»´ì •" , 1000);
         p.show();
 
     }
